@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nexus Luma AI — Web Component Demo</title>
+  <style>
+    body { min-height: 200vh; margin:0; background: #0b0d12; color: #e5e7eb; font-family: Inter, system-ui, sans-serif; }
+    .hero { padding: 8rem 1.5rem; text-align: center; }
+    .hero h1 { font-size: clamp(2.2rem, 2.8vw, 3.5rem); margin: 0 0 0.6rem; }
+    .hero p { opacity: .8; max-width: 60ch; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Demo — Drop‑in <code>&lt;nxl-ai-widget&gt;</code></h1>
+    <p>Scroll, click the floating orb, then grant mic permission. Replace attributes with your keys.</p>
+  </div>
+
+  <!-- Optional: Preload Vapi SDK (the widget will lazy-load it if omitted) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@vapi-ai/web@latest/dist/vapi.js"></script> -->
+
+  <script src="nxl-ai-widget.js" defer></script>
+
+  <!-- Replace with your real keys/ids -->
+  <nxl-ai-widget public-key="5ba73cb1-6254-4663-b1c9-c72835331618" assistant-id="900acf00-1429-4a76-92b2-93f0e4ffa109" theme="dark" position="bottom-right"></nxl-ai-widget>
+</body>
+</html>

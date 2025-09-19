@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nexus Luma AI — iFrame Embed Demo</title>
+</head>
+<body style="min-height:200vh;background:#0b0d12;color:#e5e7eb;font-family:Inter,system-ui,sans-serif">
+  <h1 style="padding:2rem">iFrame Embed Demo</h1>
+  <div id="nxl-mount"></div>
+
+  <script src="nxl-iframe-host.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      NXL.mountIframeWidget({
+        mount: document.getElementById('nxl-mount'),
+        publicKey: '5ba73cb1-6254-4663-b1c9-c72835331618',
+        assistantId: '900acf00-1429-4a76-92b2-93f0e4ffa109',
+        position: 'bottom-right',
+        widgetUrl: 'nxl-iframe.html'
+      });
+    });
+  </script>
+</body>
+</html>
